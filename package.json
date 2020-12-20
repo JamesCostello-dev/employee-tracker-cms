@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "start": "nodemon sever.js"
+    "migrate": "mysql db/EmployeeTracker.db < db/schema.sql",
+    "seed": "mysql db/EmployeeTracker.db < db/seeds.sql",
+    "db": "mysql db/EmployeeTracker.db",
+    "start": "nodemon server.js"
   },
   "repository": {
     "type": "git",
