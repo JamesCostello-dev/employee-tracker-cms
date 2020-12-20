@@ -4,10 +4,6 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
-    "migrate": "mysql db/EmployeeTracker.db < db/schema.sql",
-    "seed": "mysql db/EmployeeTracker.db < db/seeds.sql",
-    "db": "mysql db/EmployeeTracker.db",
     "start": "nodemon server.js"
   },
   "repository": {
@@ -25,8 +21,6 @@
     "console.table": "^0.10.0",
     "express": "^4.17.1",
     "inquirer": "^7.3.3",
-    "jest": "^26.6.3",
-    "mysql": "^2.18.1",
     "mysql2": "^2.2.5",
     "nodemon": "^2.0.6"
   }
